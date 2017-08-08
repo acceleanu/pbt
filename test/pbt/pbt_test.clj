@@ -17,4 +17,13 @@
     (= (lower-case? c)
        (and (>= (int c) (int \a))
             (<= (int c) (int \z))))))
+(defn sign [x]
+  (cond
+    (zero? x) 0
+    (neg? x) -1
+    :else 1))
+
+(defspec equivalent-comparison 10000
+  (prop/for-all [a gen/string-ascii]
+  (>= (.hashCode a) 0 )))
 
