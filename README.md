@@ -1,12 +1,14 @@
 # pbt
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Property Based Tests Exploration
 
 ## Usage
+
+Run tests continuously:
+
+```
+lein midje :autotest
+```
 
 FIXME: explanation
 
